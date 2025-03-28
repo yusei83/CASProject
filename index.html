@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IB Student Resource Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>IB Student Resource Hub</h1>
+<section id="searchSection">
+    <h2>Search Resources</h2>
+    <input type="text" id="searchInput" placeholder="Search by title...">
+    <ul id="searchResults"></ul>
+</section>
+<section id="uploadSection">
+    <h2>Upload a resource</h2>
+    <form id="uploadForm">
+        <input type="text" id="title" placeholder="Title" required><br>
+
+        <select id="subject" required>
+            <option value="" disabled selected>Select subject</option>
+            <option>Business management</option>
+            <option>Economics</option>
+            <option>English A: Language and literature</option>
+            <option>Japanese A: Language and literature</option>
+            <option>Japanese B</option>
+            <option>Japanese Ab initio</option>
+            <option>French B</option>
+            <option>French Ab initio</option>
+            <option>Mathematics: Application and analysis</option>
+            <option>Mathematics: Application and interpretation</option>
+            <option>Design technology</option>
+            <option>Computer science</option>
+            <option>Physics</option>
+            <option>Biology</option>
+            <option>Chemistry</option>
+        </select><br>
+
+        <div class="levels">
+            <label><input type="checkbox" name="level" value="SL">SL</label>
+            <label><input type="checkbox" name="level" value="HL">HL</label>
+        </div>
+    </form>
+</section>
+</body>
+</html>
+
