@@ -39,9 +39,26 @@
         <div class="levels">
             <label><input type="checkbox" name="level" value="SL">SL</label>
             <label><input type="checkbox" name="level" value="HL">HL</label>
-        </div>
+        </div><br>
+
+        <label>Upload File:</label>
+        <input type="file" id="file"><br>
+
+        <label>or Enter Website Link:</label>
+        <input type="url" id="link" placeholder="https://example.com"><br>
+
+        <button type="submit">Upload</button>
     </form>
 </section>
+
+<section id="viewSection">
+    <h2>View Resources</h2>
+    <select id="filterSubject">
+        <option value="" disabled selected>Select Subject</option>
+    </select>
+    <ul id="resourceList"></ul>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
-htfhg
