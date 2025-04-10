@@ -72,23 +72,3 @@ filterSubject.addEventListener('change', () => {
     resourceList.appendChild(li);
   });
 });
-searchInput.addEventListener('input', () => {
-  const query = searchInput.value.toLowerCase();
-  searchResults.innerHTML = '';
-
-  if (!query) return;
-
-  const matched = resources.filter(r => r.title.toLowerCase().includes(query));
-
-  if (matched.length === 0) {
-    searchResults.innerHTML = '<li>No results found.</li>';
-    return;
-  }
-
-  matched.forEach(r => {
-    const isLink = r.fileURL.startsWith("http");
-    const li = document.createElement('li');
-    li.innerHTML = `<strong>${r.title}</strong> (${r.levels}, ${r.subject}) - <a href="${r.fileURL}" target="_blank">${isLink ? "Visit Link" : "Download File"}</a>`;
-    searchResults.appendChild(li);
-  });
-});
